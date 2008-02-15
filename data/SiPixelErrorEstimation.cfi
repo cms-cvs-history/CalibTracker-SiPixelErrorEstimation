@@ -2,7 +2,10 @@ module PixelErrorEstimation = SiPixelErrorEstimation
 	{
 		untracked string outputFile = "SiPixelErrorEstimation_Ntuple.root"
 	
-        	untracked string src = "ctfWithMaterialTracks"
+		# Replace  "ctfWithMaterialTracks" with "generalTracks"
+        	#untracked string src = "ctfWithMaterialTracks"
+		untracked string src = "generalTracks"	
+
 
 		# Do we check that the simHit associated with recHit is of the expected particle type ?
 		bool checkType = true
